@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.smartelctronics.smartlock.utils.ConnectionType"/>
+
+        <variable
+                name="viewModel"
+                type="com.smartelctronics.smartlock.viewmodel.MainViewModel">
+        </variable>
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+            <Button
+                    android:id="@+id/btn_via_internet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/via_internet"
+                    android:onClick="@{() -> viewModel.onClick(ConnectionType.INTERNET)}"/>
+
+            <Button
+                    android:id="@+id/btn_via_bluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/via_bluetooth"
+                    android:onClick="@{() -> viewModel.onClick(ConnectionType.BLUETOOTH)}"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>

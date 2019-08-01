@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Smart Lock</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="connected">Connected</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="retry">Retry</string>
+    <string name="via_internet">Via Internet</string>
+    <string name="via_bluetooth">Via Bluetooth</string>
+    <string name="can_not_connect">Can not connect</string>
+</resources>
